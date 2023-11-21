@@ -1,0 +1,53 @@
+body{
+    background-color: burlywood;
+}
+#wrapper{
+    background-color:aqua
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: black;
+    display: block;
+    width:100%;
+    z-index: 10;    
+}
+#navbar nav{
+    display: flex;
+}
+#navbar nav a{
+    flex: 0 0 25vw;
+    text-align: center;
+    font-size: 2em;
+    color: #eee;
+    text-decoration: none;
+    height: 60px;
+    line-height: 2em;
+    cursor:pointer;
+
+}
+#navbar nav a:hover{
+    background-color: red;
+    color: red;
+}
+
+@media all and(max-width:600px){
+    #navbar nav a{
+        font-size: 1.2em;
+        height: 10px;
+
+    }
+    #navbar nav{
+        height: 10px;
+    }
+}
+
+
+.page{
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 100px;
+    background-color: blueviolet;
+}
